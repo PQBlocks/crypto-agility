@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "pqblocks-agility"
+version: "0.1.0"
+license: Apache-2.0
+repository-code: "https://github.com/PQBlocks/crypto-agility"
+authors:
+  - name: "The PQBlocks Authors"
+keywords:
+  - cbom
+  - cars
+  - crypto-agility
+  - cyclonedx
+  - sarif
+  - ci-gate
+  - post-quantum
+  - pqc
+abstract: "Cryptographic Agility Readiness Scoring (CARS) and CI/CD regression firewall for CycloneDX 1.6 CBOM inventories."

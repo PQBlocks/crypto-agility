@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pqblocks-agility"
+version = "0.1.0"
+description = "Cryptographic Agility Readiness Scoring (CARS) and CI/CD regression firewall for CycloneDX 1.6 CBOM inventories."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.11"
+authors = [{name = "The PQBlocks Authors"}]
+keywords = ["cbom", "cars", "crypto-agility", "cyclonedx", "sarif", "ci-gate", "post-quantum", "pqc"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security :: Cryptography",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = ["click"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+pqblocks-agility = "pqblocks_agility.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/PQBlocks/crypto-agility"
+Documentation = "https://github.com/PQBlocks/crypto-agility#readme"
+Source = "https://github.com/PQBlocks/crypto-agility"
+Changelog = "https://github.com/PQBlocks/crypto-agility/blob/main/CHANGELOG.md"
+Issues = "https://github.com/PQBlocks/crypto-agility/issues"
+Security = "https://github.com/PQBlocks/crypto-agility/security/policy"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
